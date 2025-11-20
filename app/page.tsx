@@ -395,18 +395,52 @@ export default function Home() {
             </Accordion>
           </div>
         </section>
+
+        {/* Contact Section */}
+        <section id="contact" className="py-20 bg-background">
+          <div className="container mx-auto px-4 md:px-6 max-w-3xl">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
+                お問い合わせ・ご相談
+              </h2>
+              <p className="text-lg text-muted-foreground mb-8">
+                導入のご相談やサービス内容の詳細は、LINE公式アカウントからお気軽にご連絡ください。初回ヒアリング・概算お見積りまで、すべて無料です。
+              </p>
+              <ul className="text-left space-y-3 mb-10 max-w-2xl mx-auto">
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                  <span>登録支援機関／日本語学校／紹介会社向けに個別アドバイス</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                  <span>現在のExcel・紙ベースの運用をヒアリングして最適なBase構成を提案</span>
+                </li>
+                <li className="flex items-start gap-3">
+                  <CheckCircle2 className="h-5 w-5 text-primary shrink-0 mt-0.5" />
+                  <span>ヒアリング後に無理な営業は一切ありません</span>
+                </li>
+              </ul>
+              <div className="flex flex-col items-center gap-4">
+                <a
+                  href="https://lin.ee/WdYf2tq"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LINEで無料相談を開始する"
+                >
+                  <Button size="lg" className="text-lg h-14 px-10 shadow-xl">
+                    LINEで無料相談する
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </a>
+                <p className="text-sm text-muted-foreground">
+                  ※ LINEチャットでのご相談後、必要に応じてZoomやお電話での打ち合わせも承ります。
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
-
-      {/* Mobile Floating CTA */}
-      <div className="fixed bottom-4 right-4 z-50 md:hidden">
-        <Link href="/diagnosis">
-          <Button size="lg" className="shadow-2xl rounded-full h-14 px-6 animate-in fade-in slide-in-from-bottom-4">
-            30秒で無料診断
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-        </Link>
-      </div>
     </div>
   );
 }
