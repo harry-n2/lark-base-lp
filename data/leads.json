@@ -1,0 +1,18 @@
+[
+  {
+    "id": "c0e5a281-fbb5-428c-ba01-43297a852e0e",
+    "organizationType": "registration_support",
+    "currentTool": "excel",
+    "challenges": [
+      "Challenge 1",
+      "Challenge 2"
+    ],
+    "contactName": "Test User A",
+    "contactEmail": "testa@example.com",
+    "contactPhone": "090-0000-0000",
+    "status": "new",
+    "createdAt": "2025-11-20T12:55:24.435Z",
+    "score": "A",
+    "mainPainPoint": "Challenge 1"
+  }
+]
