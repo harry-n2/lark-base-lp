@@ -140,6 +140,108 @@ function App() {
         </div>
       </section>
 
+      {/* NEW: World Trade AI Method Section (from Doc 1) */}
+      <section className="section" style={{ background: 'linear-gradient(to bottom, var(--bg-page), #1a1600)' }}>
+        <div className="container">
+          <div className="grid-12" style={{ alignItems: 'center' }}>
+            <div style={{ gridColumn: 'span 5' }}>
+              <div style={{ display: 'inline-block', padding: '6px 12px', background: 'rgba(234, 179, 8, 0.1)', border: '1px solid rgba(234, 179, 8, 0.2)', borderRadius: '100px', color: '#eab308', fontSize: '0.875rem', fontWeight: '600', marginBottom: '24px' }}>
+                New Method
+              </div>
+              <h2 style={{ fontSize: '2.5rem', marginBottom: '24px' }}>
+                World Trade <span style={{ color: '#eab308' }}>AI Method</span>
+              </h2>
+              <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '24px' }}>
+                「AIビジネス × 電子書籍出版」で、確実に副収入を構築する。<br />
+                AI格差が広がる今、勝者になるための独自メソッド。
+              </p>
+              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '16px', marginBottom: '32px' }}>
+                {[
+                  '日本を襲う「三重苦」からの脱却',
+                  'AI時代に適応するための「学び直し」',
+                  '成功への3つのステップを完全公開'
+                ].map((item, i) => (
+                  <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', color: 'var(--text-main)' }}>
+                    <div style={{ width: '20px', height: '20px', borderRadius: '50%', background: '#eab308', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '12px', color: 'black', fontWeight: 'bold' }}>✓</div>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div style={{ gridColumn: 'span 7' }}>
+              <div className="card" style={{ background: 'rgba(234, 179, 8, 0.05)', borderColor: 'rgba(234, 179, 8, 0.2)' }}>
+                <h3 style={{ fontSize: '1.5rem', marginBottom: '24px', color: '#eab308' }}>3 Steps to Success</h3>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
+                  <div style={{ display: 'flex', gap: '16px' }}>
+                    <div style={{ fontSize: '3rem', fontWeight: '800', color: 'rgba(234, 179, 8, 0.2)', lineHeight: 1 }}>01</div>
+                    <div>
+                      <h4 style={{ fontSize: '1.2rem', marginBottom: '8px' }}>AIスキルの習得</h4>
+                      <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>最新のAIツールを使いこなし、業務効率を劇的に向上させる基盤を作ります。</p>
+                    </div>
+                  </div>
+                  <div style={{ display: 'flex', gap: '16px' }}>
+                    <div style={{ fontSize: '3rem', fontWeight: '800', color: 'rgba(234, 179, 8, 0.2)', lineHeight: 1 }}>02</div>
+                    <div>
+                      <h4 style={{ fontSize: '1.2rem', marginBottom: '8px' }}>コンテンツ資産の構築</h4>
+                      <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>電子書籍として出版可能な質の高いコンテンツを、AIと協力して短期間で作成します。</p>
+                    </div>
+                  </div>
+                  <div style={{ display: 'flex', gap: '16px' }}>
+                    <div style={{ fontSize: '3rem', fontWeight: '800', color: 'rgba(234, 179, 8, 0.2)', lineHeight: 1 }}>03</div>
+                    <div>
+                      <h4 style={{ fontSize: '1.2rem', marginBottom: '8px' }}>自動収益化システムの確立</h4>
+                      <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>Amazon Kindle等のプラットフォームを活用し、継続的な収益を生む仕組みを完成させます。</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* NEW: Lead Magnet Creation Section (from Doc 2) */}
+      <section className="section" style={{ background: 'linear-gradient(to bottom, #022c22, var(--bg-page))' }}>
+        <div className="container">
+          <div className="text-center mb-12">
+            <div style={{ display: 'inline-block', padding: '6px 12px', background: 'rgba(16, 185, 129, 0.1)', border: '1px solid rgba(16, 185, 129, 0.2)', borderRadius: '100px', color: '#34d399', fontSize: '0.875rem', fontWeight: '600', marginBottom: '24px' }}>
+              Marketing Solution
+            </div>
+            <h2 style={{ fontSize: '2.5rem', marginBottom: '16px' }}>
+              無料レポート<span style={{ color: '#34d399' }}>代理作成事業</span>
+            </h2>
+            <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem', maxWidth: '800px', margin: '0 auto' }}>
+              「1日30分」で毎月50件の質の高いリードを獲得。<br />
+              見込み客を逃さない、最強のリードマグネット制作メソッド。
+            </p>
+          </div>
+
+          <div className="grid-12">
+            <div style={{ gridColumn: 'span 4' }} className="card">
+              <div style={{ fontSize: '2rem', marginBottom: '16px', color: '#34d399' }}>Problem</div>
+              <h3 style={{ fontSize: '1.25rem', marginBottom: '16px' }}>見込み客の流出</h3>
+              <p style={{ color: 'var(--text-muted)' }}>
+                多くの企業が、Webサイトに訪れた90%以上のユーザーを、何もアクションさせずに逃しています。
+              </p>
+            </div>
+            <div style={{ gridColumn: 'span 4' }} className="card">
+              <div style={{ fontSize: '2rem', marginBottom: '16px', color: '#34d399' }}>Solution</div>
+              <h3 style={{ fontSize: '1.25rem', marginBottom: '16px' }}>リードマグネット</h3>
+              <p style={{ color: 'var(--text-muted)' }}>
+                「無料レポート」や「ホワイトペーパー」を提供することで、見込み客の情報を自然に獲得します。
+              </p>
+            </div>
+            <div style={{ gridColumn: 'span 4' }} className="card">
+              <div style={{ fontSize: '2rem', marginBottom: '16px', color: '#34d399' }}>Benefit</div>
+              <h3 style={{ fontSize: '1.25rem', marginBottom: '16px' }}>自動集客の実現</h3>
+              <p style={{ color: 'var(--text-muted)' }}>
+                一度作成すれば、24時間365日、あなたの代わりに営業し続ける資産となります。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* LINE Promotion - High Impact */}
       <section className="section">
         <div className="container">
