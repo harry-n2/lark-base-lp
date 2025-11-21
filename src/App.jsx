@@ -140,104 +140,128 @@ function App() {
         </div>
       </section>
 
-      {/* NEW: World Trade AI Method Section (from Doc 1) */}
-      <section className="section" style={{ background: 'linear-gradient(to bottom, var(--bg-page), #1a1600)' }}>
+      {/* NEW: World Trade AI Method Section (Premium Gold/Dark) */}
+      <section className="section" style={{ position: 'relative', overflow: 'hidden' }}>
+        {/* Background Ambient Glow */}
+        <div style={{ position: 'absolute', top: '20%', left: '-10%', width: '600px', height: '600px', background: 'radial-gradient(circle, rgba(234, 179, 8, 0.08) 0%, transparent 70%)', filter: 'blur(80px)', zIndex: -1 }}></div>
+
         <div className="container">
-          <div className="grid-12" style={{ alignItems: 'center' }}>
-            <div style={{ gridColumn: 'span 5' }}>
-              <div style={{ display: 'inline-block', padding: '6px 12px', background: 'rgba(234, 179, 8, 0.1)', border: '1px solid rgba(234, 179, 8, 0.2)', borderRadius: '100px', color: '#eab308', fontSize: '0.875rem', fontWeight: '600', marginBottom: '24px' }}>
-                New Method
-              </div>
-              <h2 style={{ fontSize: '2.5rem', marginBottom: '24px' }}>
-                World Trade <span style={{ color: '#eab308' }}>AI Method</span>
-              </h2>
-              <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '24px' }}>
-                「AIビジネス × 電子書籍出版」で、確実に副収入を構築する。<br />
-                AI格差が広がる今、勝者になるための独自メソッド。
-              </p>
-              <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '16px', marginBottom: '32px' }}>
-                {[
-                  '日本を襲う「三重苦」からの脱却',
-                  'AI時代に適応するための「学び直し」',
-                  '成功への3つのステップを完全公開'
-                ].map((item, i) => (
-                  <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', color: 'var(--text-main)' }}>
-                    <div style={{ width: '20px', height: '20px', borderRadius: '50%', background: '#eab308', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '12px', color: 'black', fontWeight: 'bold' }}>✓</div>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div style={{ gridColumn: 'span 7' }}>
-              <div className="card" style={{ background: 'rgba(234, 179, 8, 0.05)', borderColor: 'rgba(234, 179, 8, 0.2)' }}>
-                <h3 style={{ fontSize: '1.5rem', marginBottom: '24px', color: '#eab308' }}>3 Steps to Success</h3>
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-                  <div style={{ display: 'flex', gap: '16px' }}>
-                    <div style={{ fontSize: '3rem', fontWeight: '800', color: 'rgba(234, 179, 8, 0.2)', lineHeight: 1 }}>01</div>
-                    <div>
-                      <h4 style={{ fontSize: '1.2rem', marginBottom: '8px' }}>AIスキルの習得</h4>
-                      <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>最新のAIツールを使いこなし、業務効率を劇的に向上させる基盤を作ります。</p>
-                    </div>
-                  </div>
-                  <div style={{ display: 'flex', gap: '16px' }}>
-                    <div style={{ fontSize: '3rem', fontWeight: '800', color: 'rgba(234, 179, 8, 0.2)', lineHeight: 1 }}>02</div>
-                    <div>
-                      <h4 style={{ fontSize: '1.2rem', marginBottom: '8px' }}>コンテンツ資産の構築</h4>
-                      <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>電子書籍として出版可能な質の高いコンテンツを、AIと協力して短期間で作成します。</p>
-                    </div>
-                  </div>
-                  <div style={{ display: 'flex', gap: '16px' }}>
-                    <div style={{ fontSize: '3rem', fontWeight: '800', color: 'rgba(234, 179, 8, 0.2)', lineHeight: 1 }}>03</div>
-                    <div>
-                      <h4 style={{ fontSize: '1.2rem', marginBottom: '8px' }}>自動収益化システムの確立</h4>
-                      <p style={{ color: 'var(--text-muted)', fontSize: '0.9rem' }}>Amazon Kindle等のプラットフォームを活用し、継続的な収益を生む仕組みを完成させます。</p>
-                    </div>
-                  </div>
+          <div className="grid-12" style={{ alignItems: 'flex-start' }}>
+            <div style={{ gridColumn: 'span 4', position: 'sticky', top: '120px' }}>
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '8px 16px', background: 'rgba(234, 179, 8, 0.1)', border: '1px solid rgba(234, 179, 8, 0.3)', borderRadius: '100px', color: '#fbbf24', fontSize: '0.875rem', fontWeight: '700', marginBottom: '24px', boxShadow: '0 0 20px rgba(234, 179, 8, 0.2)' }}>
+                  <Zap size={14} fill="#fbbf24" /> New Method
                 </div>
-              </div>
+                <h2 style={{ fontSize: '3.5rem', lineHeight: 1.1, marginBottom: '24px', fontFamily: 'var(--font-heading)' }}>
+                  World Trade<br />
+                  <span className="text-glow-gold" style={{ color: '#fbbf24' }}>AI Method</span>
+                </h2>
+                <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '32px', lineHeight: 1.8 }}>
+                  「AIビジネス × 電子書籍出版」<br />
+                  労働集約型のビジネスから脱却し、<br />
+                  <strong style={{ color: 'white' }}>資産型収益</strong>を構築する独自メソッド。
+                </p>
+                <ul style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                  {[
+                    '日本を襲う「三重苦」からの脱却',
+                    'AI時代に適応するための「学び直し」',
+                    '成功への3つのステップを完全公開'
+                  ].map((item, i) => (
+                    <li key={i} style={{ display: 'flex', alignItems: 'center', gap: '12px', color: 'var(--text-main)', fontSize: '1rem' }}>
+                      <div style={{ width: '24px', height: '24px', borderRadius: '50%', background: 'linear-gradient(135deg, #fbbf24, #b45309)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '14px', color: 'white', fontWeight: 'bold', boxShadow: '0 4px 10px rgba(251, 191, 36, 0.3)' }}>✓</div>
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            </div>
+
+            <div style={{ gridColumn: 'span 1' }}></div>
+
+            <div style={{ gridColumn: 'span 7', display: 'flex', flexDirection: 'column', gap: '24px' }}>
+              {[
+                { step: '01', title: 'AIスキルの習得', desc: '最新のAIツールを使いこなし、業務効率を劇的に向上させる基盤を作ります。', icon: <Terminal size={24} /> },
+                { step: '02', title: 'コンテンツ資産の構築', desc: '電子書籍として出版可能な質の高いコンテンツを、AIと協力して短期間で作成します。', icon: <Layout size={24} /> },
+                { step: '03', title: '自動収益化システムの確立', desc: 'Amazon Kindle等のプラットフォームを活用し、継続的な収益を生む仕組みを完成させます。', icon: <Globe size={24} /> }
+              ].map((item, i) => (
+                <motion.div
+                  key={i}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: i * 0.2 }}
+                  className="card-premium"
+                  style={{ padding: '32px', display: 'flex', gap: '24px', alignItems: 'flex-start', borderLeft: '4px solid #fbbf24' }}
+                >
+                  <div style={{ fontSize: '3.5rem', fontWeight: '800', color: 'rgba(251, 191, 36, 0.1)', lineHeight: 0.8, letterSpacing: '-0.05em' }}>{item.step}</div>
+                  <div>
+                    <h3 style={{ fontSize: '1.5rem', marginBottom: '12px', color: '#fbbf24', display: 'flex', alignItems: 'center', gap: '12px' }}>
+                      {item.title}
+                    </h3>
+                    <p style={{ color: 'var(--text-muted)', fontSize: '1rem' }}>{item.desc}</p>
+                  </div>
+                </motion.div>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* NEW: Lead Magnet Creation Section (from Doc 2) */}
-      <section className="section" style={{ background: 'linear-gradient(to bottom, #022c22, var(--bg-page))' }}>
+      {/* NEW: Lead Magnet Creation Section (Cyberpunk/Matrix Style) */}
+      <section className="section bg-grid-pattern" style={{ position: 'relative', borderTop: '1px solid var(--border-subtle)', borderBottom: '1px solid var(--border-subtle)' }}>
+        <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.05), transparent 60%)', pointerEvents: 'none' }}></div>
+
         <div className="container">
-          <div className="text-center mb-12">
-            <div style={{ display: 'inline-block', padding: '6px 12px', background: 'rgba(16, 185, 129, 0.1)', border: '1px solid rgba(16, 185, 129, 0.2)', borderRadius: '100px', color: '#34d399', fontSize: '0.875rem', fontWeight: '600', marginBottom: '24px' }}>
+          <div className="text-center mb-16">
+            <motion.div
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              style={{ display: 'inline-block', padding: '8px 24px', background: 'rgba(16, 185, 129, 0.1)', border: '1px solid #10b981', borderRadius: '100px', color: '#34d399', fontSize: '0.9rem', fontWeight: '700', marginBottom: '24px', letterSpacing: '0.05em', textTransform: 'uppercase' }}
+            >
               Marketing Solution
-            </div>
-            <h2 style={{ fontSize: '2.5rem', marginBottom: '16px' }}>
+            </motion.div>
+            <h2 style={{ fontSize: '3rem', marginBottom: '16px', textShadow: '0 0 30px rgba(16, 185, 129, 0.3)' }}>
               無料レポート<span style={{ color: '#34d399' }}>代理作成事業</span>
             </h2>
-            <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem', maxWidth: '800px', margin: '0 auto' }}>
+            <p style={{ color: 'var(--text-muted)', fontSize: '1.2rem', maxWidth: '800px', margin: '0 auto' }}>
               「1日30分」で毎月50件の質の高いリードを獲得。<br />
-              見込み客を逃さない、最強のリードマグネット制作メソッド。
+              見込み客を逃さない、<span style={{ color: '#34d399', fontWeight: 'bold' }}>最強のリードマグネット</span>制作メソッド。
             </p>
           </div>
 
-          <div className="grid-12">
-            <div style={{ gridColumn: 'span 4' }} className="card">
-              <div style={{ fontSize: '2rem', marginBottom: '16px', color: '#34d399' }}>Problem</div>
-              <h3 style={{ fontSize: '1.25rem', marginBottom: '16px' }}>見込み客の流出</h3>
-              <p style={{ color: 'var(--text-muted)' }}>
-                多くの企業が、Webサイトに訪れた90%以上のユーザーを、何もアクションさせずに逃しています。
-              </p>
-            </div>
-            <div style={{ gridColumn: 'span 4' }} className="card">
-              <div style={{ fontSize: '2rem', marginBottom: '16px', color: '#34d399' }}>Solution</div>
-              <h3 style={{ fontSize: '1.25rem', marginBottom: '16px' }}>リードマグネット</h3>
-              <p style={{ color: 'var(--text-muted)' }}>
-                「無料レポート」や「ホワイトペーパー」を提供することで、見込み客の情報を自然に獲得します。
-              </p>
-            </div>
-            <div style={{ gridColumn: 'span 4' }} className="card">
-              <div style={{ fontSize: '2rem', marginBottom: '16px', color: '#34d399' }}>Benefit</div>
-              <h3 style={{ fontSize: '1.25rem', marginBottom: '16px' }}>自動集客の実現</h3>
-              <p style={{ color: 'var(--text-muted)' }}>
-                一度作成すれば、24時間365日、あなたの代わりに営業し続ける資産となります。
-              </p>
-            </div>
+          <div className="grid-12" style={{ gap: '24px' }}>
+            {[
+              { label: 'Problem', title: '見込み客の流出', desc: 'Webサイト訪問者の90%以上が、何もせずに離脱しています。', color: '#ef4444' },
+              { label: 'Solution', title: 'リードマグネット', desc: '「無料レポート」を提供し、見込み客情報を自然に獲得します。', color: '#34d399' },
+              { label: 'Benefit', title: '自動集客の実現', desc: '24時間365日、あなたの代わりに営業し続ける資産となります。', color: '#3b82f6' }
+            ].map((card, i) => (
+              <motion.div
+                key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.2 }}
+                className="card-premium"
+                style={{ gridColumn: 'span 4', position: 'relative', overflow: 'hidden', padding: '40px 32px', textAlign: 'center', borderTop: `4px solid ${card.color}` }}
+              >
+                <div style={{
+                  position: 'absolute', top: '-50px', right: '-50px', width: '100px', height: '100px',
+                  background: card.color, filter: 'blur(60px)', opacity: 0.2
+                }}></div>
+
+                <div style={{ fontSize: '0.875rem', fontWeight: '800', color: card.color, textTransform: 'uppercase', letterSpacing: '0.1em', marginBottom: '16px' }}>
+                  {card.label}
+                </div>
+                <h3 style={{ fontSize: '1.75rem', marginBottom: '16px', fontWeight: '700' }}>{card.title}</h3>
+                <p style={{ color: 'var(--text-muted)', fontSize: '1rem' }}>{card.desc}</p>
+              </motion.div>
+            ))}
           </div>
         </div>
       </section>
